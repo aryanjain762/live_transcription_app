@@ -15,7 +15,6 @@ client = Groq(
     api_key=os.getenv('GROQ_API_KEY')
 )
 
-# Load spaCy model
 nlp = spacy.load('en_core_web_sm')
 
 @app.route('/api/analyze', methods=['POST'])
